@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="cnpj_cpf_description">Pra acessar o web banking, precisamos do seu CNPJ ou CPF</string>
+    <string name="type_password">Digite sua senha de acesso usando o teclado virtual abaixo.</string>
+    <string name="sign_in">Entrar</string>
+    <string name="only_numbers">Use Apenas números</string>
+    <string name="i_m_not_a_robot">I\'m not a robot</string>
+</resources>
