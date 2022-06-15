@@ -5,4 +5,8 @@
     <string name="sign_in">Entrar</string>
     <string name="only_numbers">Use Apenas números</string>
     <string name="i_m_not_a_robot">I\'m not a robot</string>
+    <string name="next">Avançar</string>
+    <string name="value_number">%1 ou %2</string>
+    <string name="forget_password">Esqueceu sua senha?</string>
+    <string name="recovery_now">Recuperar agora</string>
 </resources>

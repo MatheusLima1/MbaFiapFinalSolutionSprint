@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/circle_one"
+        layout="@layout/circle_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/circle_two"
+        layout="@layout/circle_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toStartOf="@id/circle_three"
+        app:layout_constraintStart_toEndOf="@+id/circle_one"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/circle_three"
+        layout="@layout/circle_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circle_two"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/circle_four"
+        layout="@layout/circle_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle_one" />
+
+    <include
+        android:id="@+id/circle_five"
+        layout="@layout/circle_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/circle_two"
+        app:layout_constraintStart_toStartOf="@id/circle_two"
+        app:layout_constraintTop_toBottomOf="@id/circle_one" />
+
+    <ImageView
+        android:id="@+id/backspace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_backspace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/circle_five"
+        app:layout_constraintTop_toBottomOf="@id/circle_three" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
