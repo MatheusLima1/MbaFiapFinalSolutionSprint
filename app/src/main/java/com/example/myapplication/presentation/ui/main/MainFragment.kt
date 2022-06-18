@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.main
+package com.example.myapplication.presentation.ui.main
 
 import android.os.Bundle
 import android.text.Editable
@@ -7,12 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
-import com.example.myapplication.MainActivity
+import com.example.myapplication.presentation.ui.MainActivity
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentMainBinding
-import com.example.myapplication.ui.password.PasswordFragment
+import com.example.myapplication.presentation.ui.password.PasswordFragment
 
 class MainFragment : Fragment() {
 

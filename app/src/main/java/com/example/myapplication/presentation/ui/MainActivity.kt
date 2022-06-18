@@ -1,11 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.presentation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.example.myapplication.ui.main.MainFragment
-import com.example.myapplication.ui.password.PasswordFragment
+import com.example.myapplication.R
+import com.example.myapplication.presentation.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 
