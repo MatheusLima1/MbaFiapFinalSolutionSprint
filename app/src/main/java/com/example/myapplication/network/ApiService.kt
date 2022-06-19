@@ -1,8 +1,8 @@
 package com.example.myapplication.network
 
-import com.example.myapplication.domain.model.RequestLoginStepOne
-import com.example.myapplication.domain.model.ResponseLoginStepOne
-import com.example.myapplication.domain.model.ResponseLoginStepTwo
+import com.example.myapplication.network.reponse.RequestLoginStepOne
+import com.example.myapplication.network.reponse.ResponseLoginStepOne
+import com.example.myapplication.network.reponse.ResponseLoginStepTwo
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
