@@ -12,6 +12,7 @@ class GeneralRepository(
     private val stepOneMapper: LoginStepOneMapper,
     private val stepTwoMapper: LoginStepTwoMapper
 ) : IGeneralRepository {
+
     override suspend fun getOauthIntention(cpfCnpj: Long): LoginStepOne {
         val result = service.getOauthIntention(cpfCnpj)
         return stepOneMapper.mapFromDomainModel(result)

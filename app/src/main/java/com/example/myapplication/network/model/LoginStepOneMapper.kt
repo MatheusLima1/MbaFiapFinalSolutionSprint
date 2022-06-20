@@ -12,6 +12,6 @@ class LoginStepOneMapper : DomainMapper<LoginStepOne, ResponseLoginStepOne> {
 
     override fun mapFromDomainModel(domainModel: ResponseLoginStepOne) = LoginStepOne(
         intentionId = domainModel.intentionId,
-        keyboard = domainModel.keyboard
+        keyboard = domainModel.keyboard!!
     )
 }

@@ -49,7 +49,7 @@ class MainFragment : Fragment() {
             }
         })
         binding.btnSignIn.setOnClickListener {
-            MainActivity.goToFragment(fragmentManager, PasswordFragment.newInstance())
+            MainActivity.goToFragment(fragmentManager, PasswordFragment.newInstance(binding.edtCnpjCpf.text.toString()))
         }
     }
 

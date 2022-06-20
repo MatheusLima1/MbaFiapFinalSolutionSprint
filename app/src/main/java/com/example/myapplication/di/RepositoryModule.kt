@@ -7,12 +7,11 @@ import com.example.myapplication.repository.GeneralRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
 import javax.inject.Singleton
-
+import dagger.hilt.components.SingletonComponent
 
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 object RepositoryModule {
     @Singleton
     @Provides
