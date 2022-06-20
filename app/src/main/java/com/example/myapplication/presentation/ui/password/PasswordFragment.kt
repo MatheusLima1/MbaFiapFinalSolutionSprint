@@ -74,7 +74,7 @@ class PasswordFragment : Fragment() {
                     .setTitle("Login bem Sucedido!")
                     .setMessage("AccessToken: " + it.accessToken + " " + "RefreshToken: " + it.refreshToken + " " + "ExpireIn: " + it.expireIn)
                     .show()
-
+                dialog.show();
                 Log.i(
                     "TERMINEI",
                     it.accessToken + " " + it.refreshToken + " " + it.expireIn
