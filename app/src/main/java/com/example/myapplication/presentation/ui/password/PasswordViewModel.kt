@@ -10,6 +10,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 @HiltViewModel
@@ -38,11 +39,14 @@ class PasswordViewModel
         CoroutineScope(Dispatchers.IO).launch {
             try {
                 stepTwo = repository.login(requestStepOne)
-                stepTwo?.let {
-                    success(it)
+                withContext(Dispatchers.Main) {
+                    stepTwo?.let {
+                        success(it)
+                    }
                 }
-            } catch (ex: Exception){
-              failure()
+            } catch (ex: Exception) {
+                Log.e("Erro Login", ex.stackTraceToString(), ex)
+                failure()
             }
         }
     }
