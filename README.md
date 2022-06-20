@@ -12,6 +12,7 @@ Frameworks e libs utilizadas:
 - LiveData
 - Hilt
 - Gson
+- MVVM
 
 O funcionamento da aplicação é simples, você entra com o cpf/cnpj e clicka na opção que não é robô (caso não faça os 2 passos o botão fica desabilitado), após isso é necessário informar a senha de 6 dígitos, caso dê erro, será mostrada uma mensagem de erro, caso dê sucesso é mostrado uma mensagem de sucesso.
 Login e senha para teste: login: 12345678912 senha: 123456
