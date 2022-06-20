@@ -33,4 +33,6 @@ Fluxo no caso de sucesso:
 
 https://user-images.githubusercontent.com/20291251/174604437-44b3f2fe-6314-4586-a356-b16ac34d44ef.mp4
 
+APK para teste:
+https://drive.google.com/file/d/16cCFnZXb2PB1h2jD249Dta4ucXSbQH4Q/view?usp=sharing
 
